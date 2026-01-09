@@ -32,6 +32,7 @@ To create the required conda environment, run:
 
 ```bash
 bash environment.sh
+```
 
 ## Usage
 
