@@ -14,8 +14,8 @@ according to their official documentation:
   Apply for and download the latest FoldX 5.1 release from the official website:  
   https://foldxsuite.crg.eu/
 
-- **Rosetta (v3.15)**  
-  Download Rosetta 3.15 from the RosettaCommons official website:  
+- **Rosetta (v3.14)**  
+  Download Rosetta 3.14 from the RosettaCommons official website:  
   https://rosettacommons.org/
 
 After installation, please ensure that the installation paths of FoldX
@@ -30,8 +30,8 @@ This pipeline requires a dedicated conda environment.
 An automated environment setup script is provided in the working directory.
 To create the required conda environment, run:
 
-```bash
-bash environment.sh
+```
+conda env create -f environment.yml
 ```
 
 ## Usage
@@ -41,6 +41,7 @@ according to your local environment:
 
 - The installation directories of the required software/tools
 - The file path to the protein complex structure used as input
+- Define the ligand chain (modified chain) and receptor chain.
 
 After configuring the script, run the following commands to execute the pipeline:
 
