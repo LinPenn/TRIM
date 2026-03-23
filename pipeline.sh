@@ -3,17 +3,17 @@
 #SBATCH --cpus-per-task=20               # 申请的CPU数（需大于等于并行线程数 ）
 #SBATCH --mem=64G                        # 申请内存大小
 #SBATCH --time=15-00:00:00               # 最大运行时间
-#SBATCH -D /home/hzclab/TRIM-test        # 工作目录（TRIM所在目录）
+#SBATCH -D /path/to/TRIM        # 工作目录（TRIM所在目录）
 
 #=================================软件配置=====================================
 #CONDA环境
 CONDA_BASE=$(conda info --base)
 #软件目录
-FOLDX_DIR="/home/hzclab/software/foldx5.1"
-ROSETTA_DIR="/home/hzclab/software/rosetta/source/bin"
-BASE_DIR="/home/hzclab/TRIM-test"
+FOLDX_DIR="/path/to/foldx5.1"
+ROSETTA_DIR="/path/to/rosetta/source/bin"
+BASE_DIR="/path/to/TRIM"
 #复合物结构路径
-PDB="$BASE_DIR/pdb/2OOB.pdb"
+PDB="$BASE_DIR/pdb/complex.pdb"
 # 受体蛋白链(若蛋白为多条链："ABCD")
 rec_chains="B"
 # 配体蛋白链（改造目标）
